@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KreditBee Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        line-height: 1.6;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: white;
+        font-weight: 500;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+      }
+      nav button {
+        border-radius: 10px;
+        margin: 0 10px 0 10px;
+        padding: 15px 20px;
+        background: white;
+        border: 1px solid red;
+        color: red;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease,
+          color 0.3s ease;
+      }
+      nav button:hover {
+        transform: scale(1.05);
+        background-color: red;
+        color: white;
+      }
+      .logo {
+        width: 200px;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .nav-items {
+        display: flex;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .features {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-top: 100px;
+      }
+      .feature-box {
+        text-align: left;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .blogs {
+        margin: 50px 0;
+      }
+      .blogs h2 {
+        margin-bottom: 20px;
+      }
+      .blog-posts {
+        display: flex;
+        justify-content: space-between;
+      }
+      .blog-card {
+        width: 30%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .blog-card img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        height: 200px;
+        object-fit: cover;
+      }
+      .signup-section {
+        background-color: #fad02e;
+        padding: 40px;
+        text-align: center;
+      }
+      .signup-form {
+        background: white;
+        padding: 20px;
+        display: inline-block;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .signup-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .signup-form button {
+        padding: 10px 20px;
+        background: #ff4f5b;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div style="display: contents; justify-content: space-between;">
+        <div class="logo">
+          <img
+            src="https://ik.imagekit.io/krazybee/kreditbee_in/logo_horizontal_BNqOuZWg_.svg"
+            alt="KreditBee Logo"
+          />
+        </div>
+        <div class="nav-links">
+          <div class="nav-items">
+            <a href="#">Loans</a>
+            <img
+              style="width: 15px; height: 15px; margin-top: 5px"
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=ad911f"
+              alt=""
+            />
+          </div>
+          <div class="nav-items">
+            <a href="#">Calculators</a>
+            <img
+              style="width: 15px; height: 15px; margin-top: 5px"
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=ad911f"
+              alt=""
+            />
+          </div>
+          <div>
+            <a href="#">Credit Report</a>
+          </div>
+          <div>
+            <a href="#">Refer & Earn</a>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <a href="#"
+              ><img
+                style="width: 25px; height: 25px"
+                src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000"
+                alt="Cart"
+            /></a>
+            <a href="#"
+              ><img
+                style="width: 25px; height: 25px"
+                src="https://img.icons8.com/?size=100&id=zhda2EVBCvHY&format=png&color=000000"
+                alt="Cart"
+            /></a>
+          </div>
+          <button class="signup">SIGN UP</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container">
+      <h1 style="margin-bottom: 0 !important">Why choose KreditBee?</h1>
+      <div style="display: flex; justify-content: center">
+        <span
+          style="
+            display: flex;
+            stroke: #fad02e;
+            width: 10%;
+            height: 5px;
+            background: #fad02e;
+          "
+        >
+        </span>
+      </div>
+      <div class="features">
+        <div class="feature-box">
+          <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg" alt="Lower Interest" />
+          <h3>Lower Interest Rates</h3>
+          <p>
+            Get loans for multiple purposes at lower interest rates to suit your
+            needs.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg" alt="Fast Processing" />
+          <h3>Fast Processing and Disbursal</h3>
+          <p>
+            Apply online, check your eligibility, and get money directly in your
+            bank in 10 minutes.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg" alt="Easy Repayment" />
+          <h3>Easy Repayment Options</h3>
+          <p>Repay the loan amount in easy EMI with flexible tenure options.</p>
+        </div>
+      </div>
+
+      <!-- Blog Section -->
+      <div class="blogs">
+        <h2>Fresh from the blog</h2>
+        <div class="blog-posts">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blog 1" />
+            <h3>9 Comfy Throws for Cosy Autumn Vibes</h3>
+            <p>
+              Embrace the snuggling season with stylish throws that will warm
+              your hearts.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdhsqoqU82lM3-aAiSFSvtvCvfrMUm_2FhQ&s" alt="Blog 2" />
+            <h3>14 Beautiful Bags That Express Your Unique Style</h3>
+            <p>
+              Amp up your fashion game with bags that perfectly match your
+              aesthetic.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="https://brownsaltbakery.com/cdn/shop/products/IMG_9436_1.jpg?v=1630488779" alt="Blog 3" />
+            <h3>The Best Gift Ideas for Kids of All Ages</h3>
+            <p>
+              Shop the sweetest surprises for all little ones in your
+              family—these gifts will definitely earn you some brownie points.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Section -->
+      <div class="signup-section">
+        <div class="signup-form">
+          <h3>Create Account</h3>
+          <p>Already have an account? <a href="#">Sign in</a></p>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email address" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="text" placeholder="Referral Code (Optional)" />
+          <button>SUBMIT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>COPYRIGHT &copy; ETSY PRIVATE LIMITED. ALL RIGHTS RESERVED</p>
+    </footer>
+  </body>
+</html>

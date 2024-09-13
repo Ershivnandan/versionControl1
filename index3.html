@@ -39,19 +39,12 @@
       nav button {
         border-radius: 10px;
         margin: 0 10px 0 10px;
-        padding: 15px 20px;
-        background: white;
-        border: 1px solid red;
-        color: red;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+        color: black;
+        background: rgb(177 229 14);
+        border: none;
         font-weight: 700;
         cursor: pointer;
-        transition: transform 0.3s ease, background-color 0.3s ease,
-          color 0.3s ease;
-      }
-      nav button:hover {
-        transform: scale(1.05);
-        background-color: red;
-        color: white;
       }
       .logo {
         width: 200px;
@@ -59,7 +52,7 @@
       .nav-links {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 50px;
       }
       .nav-items {
         display: flex;
@@ -119,6 +112,13 @@
         border-radius: 15px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        width: 1204px;
+        gap: 100px;
+      }
       .signup-form input {
         width: 100%;
         padding: 10px;
@@ -155,97 +155,66 @@
       <div style="display: contents; justify-content: space-between">
         <div class="logo">
           <img
-            src="https://ik.imagekit.io/krazybee/kreditbee_in/logo_horizontal_BNqOuZWg_.svg"
-            alt="KreditBee Logo"
+            src="https://coinswitch.co/_next/static/media/logo.01525825.svg"
+            alt="Coin switch"
           />
         </div>
         <div class="nav-links">
           <div class="nav-items">
-            <a href="#">Loans</a>
+            <a href="#">Products</a>
             <img
-              style="width: 15px; height: 15px; margin-top: 5px"
-              src="https://img.icons8.com/?size=100&id=99991&format=png&color=ad911f"
+              style="
+                width: 15px;
+                height: 15px;
+                margin-top: 5px;
+                margin-left: 5px;
+              "
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
               alt=""
             />
           </div>
           <div class="nav-items">
-            <a href="#">Calculators</a>
+            <a href="#">Coins</a>
+          </div>
+          <div>
+            <a href="#">Ventures</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <a href="#">Company</a>
             <img
               style="width: 15px; height: 15px; margin-top: 5px"
-              src="https://img.icons8.com/?size=100&id=99991&format=png&color=ad911f"
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
               alt=""
             />
           </div>
-          <div>
-            <a href="#">Credit Report</a>
-          </div>
-          <div>
-            <a href="#">Refer & Earn</a>
-          </div>
-          <div style="display: flex; justify-content: space-between">
-            <a href="#"
-              ><img
-                style="width: 25px; height: 25px"
-                src="https://img.icons8.com/?size=100&id=85038&format=png&color=000000"
-                alt="Cart"
-            /></a>
-            <a href="#"
-              ><img
-                style="width: 25px; height: 25px"
-                src="https://img.icons8.com/?size=100&id=zhda2EVBCvHY&format=png&color=000000"
-                alt="Cart"
-            /></a>
-          </div>
-          <button class="signup">SIGN UP</button>
+          <button class="signup">Login To Pro</button>
         </div>
       </div>
     </nav>
 
     <!-- Main Section -->
     <div class="container">
-      <h1 style="margin-bottom: 0 !important">Why choose KreditBee?</h1>
-      <div style="display: flex; justify-content: center">
-        <span
-          style="
-            display: flex;
-            stroke: #fad02e;
-            width: 10%;
-            height: 5px;
-            background: #fad02e;
-          "
-        >
-        </span>
-      </div>
-      <div class="features">
-        <div class="feature-box">
+      <div class="grid-container">
+        <div>
           <img
-            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg"
-            alt="Lower Interest"
+            src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/blockchain.webp"
+            alt="img"
           />
-          <h3>Lower Interest Rates</h3>
-          <p>
-            Get loans for multiple purposes at lower interest rates to suit your
-            needs.
-          </p>
         </div>
-        <div class="feature-box">
-          <img
-            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg"
-            alt="Fast Processing"
-          />
-          <h3>Fast Processing and Disbursal</h3>
-          <p>
-            Apply online, check your eligibility, and get money directly in your
-            bank in 10 minutes.
+        <div style="display: flex; justify-content: center; gap: 32px; flex-direction: column;">
+          <p style="color: rgb(73 75 87); font-weight: 800;">
+            We believe that Web3 and blockchain are the foundations of the new
+            digital, decentralized economy.
           </p>
-        </div>
-        <div class="feature-box">
-          <img
-            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg"
-            alt="Easy Repayment"
-          />
-          <h3>Easy Repayment Options</h3>
-          <p>Repay the loan amount in easy EMI with flexible tenure options.</p>
+          <p style="color: rgb(73 75 87); font-weight: 700;">
+            To this end, we’re partnering with startups that are advancing the
+            future of Blockchain technology. We provide early stage founders
+            with the capital, network connections and most importantly, the
+            advice they need to transform the Web3 landscape in India.
+          </p>
         </div>
       </div>
 
@@ -351,7 +320,10 @@
         <input id="refCode" type="text" />
         <button>SUBMIT</button>
 
-        <p style="font-size: 14px; font-weight: 500; padding-top: 10px">By signing in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        <p style="font-size: 14px; font-weight: 500; padding-top: 10px">
+          By signing in, you agree to our <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
       </div>
     </div>
 
